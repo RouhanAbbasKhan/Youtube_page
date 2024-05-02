@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Interface</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+    }
+    .navbar {
+      background-color: #ff0000;
+    }
+    .form-control {
+      width: 50%;
+      margin: 0 auto;
+    }
+    .profile-icon {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .video-container {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">YouTube</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Subscriptions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Your Channel</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Play History</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Watch Later</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item profile-icon">
+          <img src="profile-picture.jpg" alt="Profile Picture" width="40" height="40">
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="input-group mt-3">
+        <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-danger" type="button" id="button-addon2">Search</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row video-container">
+    <div class="col-md-12">
+      <iframe width="100%" height="400" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS, jQuery, Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Custom JavaScript -->
+<script>
+  // JavaScript code can go here for specific functionality
+</script>
+
+</body>
+</html>
